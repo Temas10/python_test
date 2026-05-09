@@ -33,19 +33,21 @@ REST API для учёта, хранения и аналитической об�
 ---
 
 ## Структура проекта
-> project_root/
-> ├── app/
-> │ ├── main.py # Инициализация FastAPI, эндпоинты
-> │ ├── models.py # SQLAlchemy-модели User, Device, DataPoint
-> │ ├── database.py # Настройка подключения к БД
-> │ ├── schemas.py # Pydantic-схемы запросов/ответов
-> │ ├── tasks.py # Celery-задачи для аналитики
-> │ └── celery_app.py # Инициализация Celery
-> ├── Dockerfile # Сборка образа веб-приложения и воркера
-> ├── docker-compose.yml # Запуск всех сервисов
-> ├── locustfile.py # Сценарий нагрузочного тестирования
-> ├── requirements.txt # Зависимости проекта
-> └── README.md
+```
+project_root/
+├── app/
+│   ├── main.py           # Инициализация FastAPI, эндпоинты
+│   ├── models.py         # SQLAlchemy-модели User, Device, DataPoint
+│   ├── database.py       # Настройка подключения к БД
+│   ├── schemas.py        # Pydantic-схемы запросов/ответов
+│   ├── tasks.py          # Celery-задачи для аналитики
+│   └── celery_app.py     # Инициализация Celery
+├── Dockerfile            # Сборка образа веб-приложения и воркера
+├── docker-compose.yml    # Запуск всех сервисов
+├── locustfile.py         # Сценарий нагрузочного тестирования
+├── requirements.txt      # Зависимости проекта
+└── README.md
+```
 
 ## Документация
 ![Скриншот Swagger](images/swagger.png)
